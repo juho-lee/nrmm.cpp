@@ -1,0 +1,5 @@
+data: toy
+Base Measure: Normal Wishart
+NRM: DP
+Sampler: Split-Merge
+Subset Size: 0

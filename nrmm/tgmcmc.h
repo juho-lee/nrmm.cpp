@@ -12,7 +12,7 @@ namespace npbayes
 		TGMCMC(NRM *mu, const std::vector<SuffStats*> &ss,
 			int num_sm = 20, int depth = 2);
 		~TGMCMC(void) { }
-		void Init(void);
+		void Init(bool noisy = false);
 		
 		Node * SampleSub(Node *nd, bool draw_leaf, 
 			double &log_trans) const;		

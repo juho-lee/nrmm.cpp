@@ -41,9 +41,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\libraries\Eigen;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\libraries\Eigen;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -104,6 +106,7 @@
     <ClCompile Include="bhc.cpp" />
     <ClCompile Include="cluster.cpp" />
     <ClCompile Include="eval.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="math.cpp" />
     <ClCompile Include="mult_dir.cpp" />
     <ClCompile Include="nggp.cpp" />

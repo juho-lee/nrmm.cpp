@@ -181,7 +181,7 @@ namespace npbayes
 		ndset.insert(pair);
 	}
 
-	void BHC::SequentialConstruction(Node::Set &ndset) const
+	void BHC::SequentialConstruction(Node::Set &ndset, bool noisy) const
 	{
 		Node::Queue ndque;
 		Node::Shuffle(ndset, ndque);
@@ -202,11 +202,13 @@ namespace npbayes
 				}
 				if (st.log_d > 0) ndset.insert(nd);
 				else {
-					ndset.erase(nnd);
-					nnd = MakePair(nd, nnd, st);
-					MergePair(nnd);
-					ndset.insert(nnd);
-					// Insert(ndset, nnd, nd, st, ndque);
+					if (noisy) {
+						ndset.erase(nnd);
+						nnd = MakePair(nd, nnd, st);
+						MergePair(nnd);
+						ndset.insert(nnd);
+					}
+					else Insert(ndset, nnd, nd, st, ndque);
 				}
 			}
 		}

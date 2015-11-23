@@ -1,0 +1,6 @@
+data: toy
+Base Measure: Normal Wishart
+NRM: NGGP
+Sampler: TGMCMC
+Number of SM: 10
+Depth: 2

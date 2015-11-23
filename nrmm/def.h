@@ -26,7 +26,7 @@
 
 #define PI 3.141592653589793238462
 
-static const char *datapath = "../../data";
-static const char *resultspath = "../../results";
+static const char *datapath = "../data";
+static const char *resultspath = "../results";
 
 #endif

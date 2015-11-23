@@ -10,9 +10,9 @@ namespace npbayes
 			ndset_.insert(bhc_.MakeLeaf(i, ss[i]));
 	}
 
-	void TGMCMC::Init(void)
+	void TGMCMC::Init(bool noisy)
 	{
-		bhc_.SequentialConstruction(ndset_);
+		bhc_.SequentialConstruction(ndset_, noisy);
 	}
 
 	Node * TGMCMC::SampleSub(Node *nd, bool draw_leaf, 

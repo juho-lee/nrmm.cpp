@@ -1,0 +1,5 @@
+data: toy
+Base Measure: Normal Wishart
+NRM: DP
+Sampler: Gibbs
+Subset Size: 0

@@ -16,7 +16,7 @@ namespace npbayes
 		NRMMSampler(NRM *mu, const std::vector<SuffStats*> &ss)
 			: mu_(mu), ss_(ss) { }
 		~NRMMSampler(void) { }
-		virtual void Init(void) { }
+		virtual void Init(bool noisy = false) { }
 		virtual void Init(const std::vector<int> &labels) { Init(); }
 		virtual void Sweep(void) { }
 		virtual double LogJoint(void) const { return 0; }

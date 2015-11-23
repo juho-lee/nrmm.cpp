@@ -43,7 +43,7 @@ namespace npbayes
 			ComputeStats(nd0, nd1, st);
 			Insert(ndset, nd0, nd1, st);
 		}
-		void SequentialConstruction(Node::Set &ndset) const;
+		void SequentialConstruction(Node::Set &ndset, bool noisy = false) const;
 
 		void Detach(Node::Set &ndset, Node *nd) const;
 
