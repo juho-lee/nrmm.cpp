@@ -20,6 +20,8 @@ nrmm data output bm nrm init sampler params
     * subset for subset size (see paper) and et_thres for total running time
   * nrmm data output bm nrm init 2 num_sm depth et_thres
     * num_sm for the parameter G and depth for the parameter D in the paper
+ 
+Run sample_script.bat and display_results.m to produce results for toy dataset
 
 The nips data was accquired from https://archive.ics.uci.edu/ml/datasets/Bag+of+Words.
 
