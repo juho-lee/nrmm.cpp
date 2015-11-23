@@ -13,7 +13,7 @@ nrmm data output bm nrm init sampler params
 - nrm: NRM, 0 for DP and 1 for NGGP
 - init: initialization option, 0 for exact IBHC and 1 for noisy IBHC (see experimental section of the paper)
 - sampler: sampler, 0 for Gibbs, 1 for split-merge and 2 for TGMCMC
-- params: parameters for each samplers
+- params: parameters for samplers
   * nrmm data output bm nrm init 0 subset et_thres
   * nrmm data output bm nrm init 1 subset et_thres
     * subset for subset size (see paper) and et_thres for total running time
