@@ -8,7 +8,7 @@ Coded & tested with Microsoft Visual Studio 2013 on Windows machine
 
 Requires Eigen library (http://eigen.tuxfamily.org)
 
-`nrmm data output bm nrm init sampler params`
+Usage: type `nrmm data output bm nrm init sampler params` after building
 
 - data: data name (e.g., toy, 10k, nips)
 - output: output folder name 
